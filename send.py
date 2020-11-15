@@ -1,15 +1,14 @@
-import pika
 import time
+import pika
 
-connection = pika.BlockingConnection(
-    pika.ConnectionParameters(host='localhost'))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 
-channel.queue_declare(queue='hello')
+channel.exchange_declare(exchange='timestamps', exchange_type='fanout')
 
 while True:
     time.sleep(2)
     body_to_send = 'Hello World!' + ' ' + str(time.time())
-    channel.basic_publish(exchange='', routing_key='hello', body=body_to_send)
-print(" [x] Sent 'Hello World!'")
+    channel.basic_publish(exchange='timestamps', routing_key='', body=body_to_send)
+
 connection.close()

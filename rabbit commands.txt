@@ -1,3 +1,5 @@
 rabbitmq-diagnostics -q status
 rabbitmqctl.bat stop
 rabbitmqctl.bat start_app
+rabbitmq-plugins enable rabbitmq_prometheus
+rabbitmqctl list_exchanges
