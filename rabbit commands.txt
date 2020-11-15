@@ -1,0 +1,3 @@
+rabbitmq-diagnostics -q status
+rabbitmqctl.bat stop
+rabbitmqctl.bat start_app
