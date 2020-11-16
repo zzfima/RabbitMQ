@@ -1,8 +1,8 @@
 # RabbitMQ + Grafana + Prometheus
 ### after finish this document you will be able run RabbitMQ producer, consumers and visualize it on Grafana web metrics UI
-My OS windows 10, no dockers/kubernetis.
+My OS windows 10, no dockers/kubernetes.
 
-The metrics chaine are: RabbitMQ -> rabbitmq_exporter -> Prometheus -> Grafana
+The metrics chain are: RabbitMQ -> rabbitmq_exporter -> Prometheus -> Grafana
 Instead of RabbitMQ -> rabbitmq_exporter can be others, just configuration will be changed. Here all exporters: https://prometheus.io/docs/instrumenting/exporters/
 
 •	Prometheus web panel: http://localhost:9090/
