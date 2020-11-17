@@ -24,7 +24,11 @@ This is a port, you need write to in python code:
 4. Run it
 5. Run some command to see it working: 
 * rabbitmq-diagnostics -q status
-6. Activate plugin: rabbitmq-plugins enable rabbitmq_management
+6. Activate plugins: 
+```
+rabbitmq-plugins enable rabbitmq_management
+rabbitmq-plugins enable rabbitmq_prometheus
+```
 7. go to http://localhost:15672, pass/username = guest, check it works
 
 ### Application producer consumer run
