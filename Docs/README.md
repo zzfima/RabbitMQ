@@ -24,7 +24,8 @@ This is a port, you need write to in python code:
 4. Run it
 5. Run some command to see it working: 
 * rabbitmq-diagnostics -q status
-6. go to http://localhost:15672, pass/username = guest, check it works
+6. Activate plugin: rabbitmq-plugins enable rabbitmq_management
+7. go to http://localhost:15672, pass/username = guest, check it works
 
 ### Application producer consumer run
 1. Download sources of this git and run (recieve.py can be run in multiple instances):
