@@ -8,7 +8,7 @@ Instead of RabbitMQ -> rabbitmq_exporter can be others, just configuration will 
 •	Prometheus web panel: http://localhost:9090/
 •	Grafana web panel: http://localhost:3000/
 •	RabbitMQ web panel: http://localhost:15672/
-
+•	rabbitmq_exporter web panel: http://localhost:9419/
 
 ### RabbitMQ
 1. Download RabbitMQ from https://www.rabbitmq.com/download.html and install
