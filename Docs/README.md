@@ -13,11 +13,10 @@ Instead of RabbitMQ -> rabbitmq_exporter can be others, just configuration will 
 ### RabbitMQ
 1. Download RabbitMQ from https://www.rabbitmq.com/download.html and install
 2. After install go to C:\Users\yafimz\AppData\Roaming\RabbitMQ\ and create rabbitmq.conf
-3. Inside put configuration:
+3. Inside put configuration (This is address, listeners (rabbitmq_exporter) will bind to):
 ```
 listeners.tcp.default = 5673
 ```
-This is address, listeners (rabbitmq_exporter) will bind to
 4. Run it
 5. Run some command to see it working: 
 * rabbitmq-diagnostics -q status
